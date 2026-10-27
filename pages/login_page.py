@@ -11,8 +11,8 @@ class LoginPage:
         self.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
     def login(self):
-        self.page.get_by_role("textbox", name="Username").fill("Admin")
-        self.page.get_by_role("textbox", name="Password").fill("admin123")
+        self.page.locator('input[name="username"]').fill("Admin")
+        self.page.locator('input[name="password"]').fill("admin123")
         allure.attach(
             self.page.screenshot(),
             name="Login form with credentials entered",

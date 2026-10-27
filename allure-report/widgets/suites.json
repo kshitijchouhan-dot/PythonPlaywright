@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"a2d11a943a72faa21b30a710aa9ea5fa","name":"stepdef","statistic":{"failed":1,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":3}}]}
+{"total":1,"items":[{"uid":"a2d11a943a72faa21b30a710aa9ea5fa","name":"stepdef","statistic":{"failed":0,"broken":1,"skipped":0,"passed":2,"unknown":0,"total":3}}]}
