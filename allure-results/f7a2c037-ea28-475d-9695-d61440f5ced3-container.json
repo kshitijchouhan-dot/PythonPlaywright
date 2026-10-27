@@ -1,0 +1,1 @@
+{"uuid": "8f76ec6c-819e-4960-ae8b-8523c858e03d", "befores": [{"name": "pytestbdd_stepdef_given_I open the OrangeHRM login page", "status": "passed", "start": 1793009028617, "stop": 1793009028617}], "afters": [{"name": "pytestbdd_stepdef_given_I open the OrangeHRM login page::<lambda>", "start": 1793009035410}], "start": 1793009028617, "stop": 1793009035410}

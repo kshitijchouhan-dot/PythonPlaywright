@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"C:\Web_App_Testing_Python\pytest_bdd_playwright\features\login.feature: Login with valid credentials","6773","test_login_with_valid_credentials","stepdef","2026-10-26","passed","2026-10-26","","test_login_steps","",""
+"C:\Web_App_Testing_Python\pytest_bdd_playwright\features\recruitment.feature: Recruit Candidate","22795","test_recruit_candidate","stepdef","2026-10-26","failed","2026-10-26","","test_recruitment_steps","",""
+"C:\Web_App_Testing_Python\pytest_bdd_playwright\features\admin.feature: Add a new user and Edit User and Delete User","33998","test_add_a_new_user_and_edit_user_and_delete_user","stepdef","2026-10-26","passed","2026-10-26","","test_admin_steps","",""

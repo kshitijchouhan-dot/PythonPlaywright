@@ -1,0 +1,1 @@
+{"uuid": "3ee5fd1e-c527-48c3-97ce-e3a6cb344656", "befores": [{"name": "pytestbdd_stepdef_when_Add Candidates details", "status": "passed", "start": 1793009043739, "stop": 1793009043739}], "afters": [{"name": "pytestbdd_stepdef_when_Add Candidates details::<lambda>", "start": 1793009058534}], "start": 1793009043739, "stop": 1793009058534}
