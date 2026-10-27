@@ -1,0 +1,56 @@
+name: Python CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pytest_bdd_playwright/requirements.txt
+
+      - name: Set up Java for Allure
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Node.js for Allure
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        working-directory: pytest_bdd_playwright
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Install Allure command-line
+        run: npm install --global allure-commandline
+
+      - name: Install Playwright Chromium
+        working-directory: pytest_bdd_playwright
+        run: python -m playwright install --with-deps chromium
+
+      - name: Check Python syntax
+        working-directory: pytest_bdd_playwright
+        run: python -m compileall -q pages stepdef
+
+      - name: Run login smoke test
+        working-directory: pytest_bdd_playwright
+        run: xvfb-run --auto-servernum python -m pytest stepdef/test_login_steps.py
