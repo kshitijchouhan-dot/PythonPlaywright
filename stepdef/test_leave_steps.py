@@ -32,9 +32,3 @@
 # @then("add comment to leave")
 # def add_comment(page):
 #     LeavePage(page).add_comment()
-
-
-
-
-
-#This file is not working
