@@ -27,7 +27,7 @@ class AdminPage:
         
         # Select Employee
         employee = self.page.get_by_placeholder("Type for hints...")
-        employee.fill("Charles  Carter")
+        employee.fill("James Butler")
         time.sleep(3)
         option = self.page.get_by_role("option").first
         expect(option).to_be_visible()

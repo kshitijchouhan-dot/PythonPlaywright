@@ -70,11 +70,7 @@ class RecruitmentPage:
 
         candidate_row.locator(".oxd-icon.bi-eye-fill").click()
 
-        expect(
-            self.page.get_by_role("button", name=" Shortlist ")
-        ).to_be_visible()
-
-        self.page.get_by_role('button', name=" Shortlist ").click()
+        self.page.locator('//button[normalize-space()="Shortlist"]').click()
 
         expect(
             self.page.get_by_role("heading", name="Shortlist Candidate")
